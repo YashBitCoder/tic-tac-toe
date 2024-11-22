@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="start show">
+            <div class="upper-marks">
+                <i class="fa-solid fa-xmark" id="x"></i>
+                <i class="fa-solid fa-o" id="o"></i>
+            </div>
+            <div class="pick-player">
+                <p id="mark-1">pick player's mark</p>
+                <div class="mark-div">
+                    <div class="x-mark picked">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="o-mark">
+                        <i class="fa-solid fa-o"></i>
+                    </div>
+                </div>
+                <p id="mark-2">remember x goes first</p>
+            </div>
+            <div class="btn-div">
+                <button class="cpu-btn">new game (vs cpu)</button>
+                <button class="player-btn">new game (vs player)</button>
+            </div>
+        </div>
+        <div class="main-game">
+            <div class="upper-head">
+                <div class="upper-marks">
+                    <i class="fa-solid fa-xmark" id="x"></i>
+                    <i class="fa-solid fa-o" id="o"></i>
+                </div>
+                <div class="whose-turn">
+                    <i class="fa-solid fa-xmark"></i>
+                    <p>turn</p>
+                </div>
+                <div class="retry-btn">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+            </div>
+            <div class="toe-grid">
+                <div class="pick-card"></div>
+                <div class="pick-card"></div>
+                <div class="pick-card"></div>
+                <div class="pick-card"></div>
+                <div class="pick-card"></div>
+                <div class="pick-card"></div>
+                <div class="pick-card"></div>
+                <div class="pick-card"></div>
+                <div class="pick-card"></div>
+            </div>
+            <div class="score-board">
+                <div class="x-sc sc">
+                    <p>X's</p>
+                    <p class="sc-num">0</p>
+                </div>
+                <div class="ties sc">
+                    <p>Ties</p>
+                    <p class="sc-num">0</p>
+                </div>
+                <div class="o-sc sc">
+                    <p>O's</p>
+                    <p class="sc-num">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="restart-div">
+            <div class="restart-game">
+                <h1>Restart Game?</h1>
+                <div class="restart-btns">
+                    <div class="cancel">
+                        <span>NO, CANCEL</span>
+                    </div>
+                    <div class="continue">
+                        <span>YES, RESTART</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="who-won">
+            <div class="winner">
+                <h3 id="win">You Won</h3>
+                <h1 id="win-label">
+                    <i class="fa-solid fa-xmark"></i> Take The Round
+                </h1>
+                <div class="round-btns">
+                    <div class="quit">
+                        <span>QUIT</span>
+                    </div>
+                    <div class="next-round">
+                        <span>NEXT ROUND</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
